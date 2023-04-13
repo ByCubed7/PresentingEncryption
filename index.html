@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html class="" lang="en">
+<head>
+    <!-- Default tags -->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta property="og:type" content="website" />
+    <meta name="author" content="ByCubed7">
+    <meta name="twitter:creator" content="@ByCubed7">
+
+    <!-- Project dependent tags -->
+    <title>Encryption & Hashing</title>
+    <meta name="og:title" content="Encryption & Hashing">
+    <meta name="og:description" content="Messing around with encryption and hashing!">
+    <meta name="description" content="Messing around with encryption and hashing!">
+    <meta name="keywords" content="encryption hashing">
+
+
+    <!-- SEE: https://unpkg.com/browse/@highlightjs/cdn-assets@11.7.0/styles/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/tokyo-night-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+
+    <script defer src="showcase.js" charset="utf-8"></script
+</head>
+<body>
+
+    <h1>Encryption & Hashing</h1>
+
+    Data: <input type="text" id="data" name="data" style="width:80%"><br>
+    <br>
+
+    <h3>Hashing</h3>
+    <table>
+     <tr>
+       <td>MD5</td>
+       <td id="MD5" onclick="copyValue('MD5')"></td>
+     </tr>
+     <tr>
+       <td>SHA1</td>
+       <td id="SHA1" onclick="copyValue('SHA1')"></td>
+     </tr>
+     <tr>
+       <td>SHA256</td>
+       <td id="SHA256" onclick="copyValue('SHA256')"></td>
+     </tr>
+     <tr>
+       <td>SHA512</td>
+       <td id="SHA512" onclick="copyValue('SHA512')"></td>
+     </tr>
+     <tr>
+       <td>SHA3</td>
+       <td id="SHA3" onclick="copyValue('SHA3')"></td>
+     </tr>
+     <tr>
+       <td>RIPEMD160</td>
+       <td id="RIPEMD160" onclick="copyValue('RIPEMD160')"></td>
+     </tr>
+   </table>
+
+   <div style="height:20px"></div>
+
+    <h3>Encryption</h3>
+     <table>
+      <tr>
+        <td>Key</td>
+        <td><input type="text" id="key"  name="key"></td>
+      </tr>
+      <tr>
+        <td>Salt</td>
+        <td><input type="text" id="salt"  name="salt"></td>
+      </tr>
+      <tr>
+        <td>IV</td>
+        <td><input type="text" id="iv"  name="iv"></td>
+      </tr>
+      <tr>
+        <td>Iterations</td>
+        <td><input type="text" id="iter"  name="iter"></td>
+      </tr>
+     </table>
+     <br>
+
+    <table>
+     <tr>
+       <td>AES</td>
+       <td id="AES" onclick="copyValue('AES')"></td>
+     </tr>
+     <tr>
+       <td>DES</td>
+       <td id="DES" onclick="copyValue('DES')"></td>
+     </tr>
+     <tr>
+       <td>Rabbit</td>
+       <td id="Rabbit" onclick="copyValue('Rabbit')"></td>
+     </tr>
+     <tr>
+       <td>RC4</td>
+       <td id="RC4" onclick="copyValue('RC4')"></td>
+     </tr>
+   </table>
+
+
+</body>
+</html>
