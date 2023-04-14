@@ -4,6 +4,7 @@ html {
   padding: 0;
   margin: 0;
   background: linear-gradient(#222, #000);
+  overflow-x: hidden;
 }
 
 body {
@@ -11,7 +12,14 @@ body {
   color: white;
 }
 
-.header {
-  position: fixed;
-  top: 0px;
+table, td > * {
+    width: 100%;
+}
+
+#decrypt {
+    width: 10px;
+}
+
+tr > td:nth-child(1) {
+    width: 80px;
 }

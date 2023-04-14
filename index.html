@@ -29,34 +29,42 @@
 
     <h1>Encryption & Hashing</h1>
 
-    Data: <input type="text" id="data" name="data" style="width:80%"><br>
+
+    <table>
+     <tr>
+       <td>Data</td>
+       <td><input type="text" id="data" name="data"></td>
+     </tr>
+    </table>
+
+    <input type="file" id="upload" name="upload" accept="*"> <br>
     <br>
 
     <h3>Hashing</h3>
     <table>
      <tr>
        <td>MD5</td>
-       <td id="MD5" onclick="copyValue('MD5')"></td>
+       <td><div id="MD5" onclick="copyValue('MD5')"></div></td>
      </tr>
      <tr>
        <td>SHA1</td>
-       <td id="SHA1" onclick="copyValue('SHA1')"></td>
+       <td><div id="SHA1" onclick="copyValue('SHA1')"></div></td>
      </tr>
      <tr>
        <td>SHA256</td>
-       <td id="SHA256" onclick="copyValue('SHA256')"></td>
+       <td><div id="SHA256" onclick="copyValue('SHA256')"></div></td>
      </tr>
      <tr>
        <td>SHA512</td>
-       <td id="SHA512" onclick="copyValue('SHA512')"></td>
+       <td><div id="SHA512" onclick="copyValue('SHA512')"></div></td>
      </tr>
      <tr>
        <td>SHA3</td>
-       <td id="SHA3" onclick="copyValue('SHA3')"></td>
+       <td><div id="SHA3" onclick="copyValue('SHA3')"></div></td>
      </tr>
      <tr>
        <td>RIPEMD160</td>
-       <td id="RIPEMD160" onclick="copyValue('RIPEMD160')"></td>
+       <td><div id="RIPEMD160" onclick="copyValue('RIPEMD160')"></div></td>
      </tr>
    </table>
 
@@ -80,25 +88,30 @@
         <td>Iterations</td>
         <td><input type="text" id="iter"  name="iter"></td>
       </tr>
+      <tr>
+        <td>Decrypt</td>
+        <td><input type="checkbox" id="decrypt"  name="decrypt"></td>
+      </tr>
      </table>
+
      <br>
 
     <table>
      <tr>
        <td>AES</td>
-       <td id="AES" onclick="copyValue('AES')"></td>
+       <td><div id="AES" onclick="copyValue('AES')"></div></td>
      </tr>
      <tr>
        <td>DES</td>
-       <td id="DES" onclick="copyValue('DES')"></td>
+       <td><div id="DES" onclick="copyValue('DES')"></div></td>
      </tr>
      <tr>
        <td>Rabbit</td>
-       <td id="Rabbit" onclick="copyValue('Rabbit')"></td>
+       <td><div id="Rabbit" onclick="copyValue('Rabbit')"></div></td>
      </tr>
      <tr>
        <td>RC4</td>
-       <td id="RC4" onclick="copyValue('RC4')"></td>
+       <td><div id="RC4" onclick="copyValue('RC4')"></div></td>
      </tr>
    </table>
 
