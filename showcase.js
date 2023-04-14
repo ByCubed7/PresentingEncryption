@@ -65,6 +65,7 @@ eleIter.value   = eleIter.value !== '' ? eleIter.value    : 3;
 window.onload = update;
 
 function update() {
+    var data = eleData.value;
     document.getElementById("MD5").innerHTML        = CryptoJS.MD5(data);
     document.getElementById("SHA1").innerHTML       = CryptoJS.SHA1(data);
     document.getElementById("SHA256").innerHTML     = CryptoJS.SHA256(data);
